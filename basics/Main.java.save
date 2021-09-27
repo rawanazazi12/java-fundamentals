@@ -1,0 +1,25 @@
+public class Main{
+
+    public static void main(String[] args) {
+        System.out.println("Hello,World!");
+        int dogCount=1;
+        System.out.println("I own " + dogCount + " " + pluralize(dogCount, "dog") + ".");
+        int catCount=2;
+        System.out.println("I own " + catCount + " " + pluralize(catCount,"cat") + ".");
+        int turtleCount=0;
+        System.out.println("I own " + turtleCount + " " + pluralize(turtleCount,"turtle") + ".");
+        flipNHeads(2);
+    }
+    public static String pluralize(int count, String unit) {
+        if (count == 0 || count > 1) {
+
+            unit = unit + "s";
+        }
+
+        return unit;
+    }
+
+    public static void flipNHeads(int n){
+         
+}
+
