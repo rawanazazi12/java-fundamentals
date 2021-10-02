@@ -3,8 +3,7 @@
  */
 package lab2;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 
 public class Library {
     public boolean someLibraryMethod() {
@@ -27,6 +26,20 @@ public class Library {
         };
         System.out.println("Array with the lowest average:");
         System.out.println(Arrays.toString(arrayOfArrays(weeklyMonthTemperatures)));
+        System.out.println(analyzingWeatherData(weeklyMonthTemperatures));
+
+        List<String> votes = new ArrayList<>();
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Shrub");
+        votes.add("Hedge");
+        votes.add("Shrub");
+        votes.add("Bush");
+        votes.add("Hedge");
+        votes.add("Bush");
+        String winner = tally(votes);
+        System.out.println(winner + " received the most votes!");
 
 
     }
@@ -91,4 +104,60 @@ public class Library {
         return array[index];
     }
 
+
+    public static String analyzingWeatherData (int[][] weeklyMonthTemperatures){
+      int minTemp=80;
+      int maxTemp=0;
+      for(int i=0;i<weeklyMonthTemperatures.length;i++){
+          for(int j=0;j<weeklyMonthTemperatures[i].length;j++){
+              if(weeklyMonthTemperatures[i][j]<minTemp){
+                  minTemp=weeklyMonthTemperatures[i][j];
+              }
+              if(weeklyMonthTemperatures[i][j]>maxTemp){
+                    maxTemp=weeklyMonthTemperatures[i][j];
+                }
+          }
+      }
+        System.out.println("High: "+ maxTemp);
+        System.out.println("Low: "+ minTemp);
+
+        Set<Integer> temperatures= new HashSet<>();
+
+        for(int i=0;i< weeklyMonthTemperatures.length;i++){
+            for (int j=0;j< weeklyMonthTemperatures[i].length;j++){
+
+                temperatures.add(weeklyMonthTemperatures[i][j]);
+
+            }
     }
+//        Set <ArrayList> temperaturesArray= new HashSet<>();
+        String notIncludedTemp="";
+       for (int i=minTemp;i<=maxTemp;i++){
+           if (!temperatures.contains(i)){
+               notIncludedTemp+="Never saw temperature:"+i+"\n";
+           }
+      }
+       return notIncludedTemp;
+    }
+    public static String tally(List<String> votesList ) {
+    Set <String> votesOptions=new HashSet<>(votesList);
+//        System.out.println(votesOptions);
+        int votesCounter=0;
+        int mostVotes=0;
+        String name="";
+        for (String vote : votesOptions) {
+            for (String s : votesList)
+                if (s.equals(vote))
+                    votesCounter++;
+            if (votesCounter > mostVotes) {
+                mostVotes = votesCounter;
+                name = vote;
+            }
+            votesCounter = 0;
+        }
+        return name;
+    }
+}
+
+
+
