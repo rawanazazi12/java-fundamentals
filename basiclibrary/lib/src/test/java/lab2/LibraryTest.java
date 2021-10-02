@@ -4,6 +4,11 @@
 package lab2;
 
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
@@ -12,16 +17,42 @@ class LibraryTest {
         assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
     }
 
-    @Test
-    public void testContainsDuplicatesMethod() {
+    @Test void testContainsDuplicatesMethod() {
         Library classUnderTest = new Library();
         int[] RandomArray = {2, 5, 3};
-        assertFalse( classUnderTest.containsDuplicates(RandomArray));
+        assertFalse( classUnderTest.containsDuplicates(RandomArray),"false");
     }
     @Test void testCalculatingAvgMethod(){
         Library library = new Library();
         int [] array = {1,2,3};
         assertEquals(2,library.calculatingAverage(array),"Average value should be 2");
 
+    }
+    @Test
+    public void analyzingWeatherData() {
+        int[][] testingArray = {
+                {12,13, 14},
+                {17,18,19},
+                {20,22,24}
+        };
+        String expectedResult = "Never saw temperature:15\nNever saw temperature:16\nNever saw temperature:21\nNever saw temperature:23\n";
+        System.out.println(Arrays.deepToString(testingArray));
+        assertEquals(expectedResult,Library.analyzingWeatherData(testingArray));
+    }
+
+    @Test
+    public void tally(){
+        List<String> votes = new ArrayList<String>();
+        votes.add("Rawan");
+        votes.add("Rawan");
+        votes.add("Jay");
+        votes.add("Jason");
+        votes.add("Jay");
+        votes.add("Mohammad");
+        votes.add("Jason");
+        votes.add("Rawan");
+        votes.add("Rawan");
+        String expectedResult = "Rawan";
+        assertEquals( expectedResult, Library.tally(votes),"the most votes result should be Rawan");
     }
 }
