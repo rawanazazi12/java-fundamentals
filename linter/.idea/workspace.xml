@@ -4,19 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ee939a3-289a-447b-beaf-50d2777a5a83" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/resources/empty.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/resources/fewErrors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/resources/manyErrors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/resources/noErrors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/resources/oneError.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gates.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/src/main/java/lab2/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/src/main/java/lab2/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../basiclibrary/lib/src/test/java/lab2/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../basiclibrary/lib/src/test/java/lab2/LibraryTest.java" afterDir="false" />
+    <list default="true" id="569ad789-3bf9-42c6-b502-f7db1764efe4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/main/java/java/fundamentals/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/test/java/java/fundamentals/LibraryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/linter/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/test/java/linter/LibraryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/linter/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/linter/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/resources/empty.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/resources/fewErrors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/resources/manyErrors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/resources/noErrors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/resources/oneError.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gates.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +49,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1ymCqL0u09ER8ANYaF4nAPp5ZNH" />
+  <component name="ProjectId" id="1yzngWDIowjUnNHsbC5tB5tI3lR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -40,102 +58,40 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../inheritance" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\dc\asac\java-fundamentals\linter" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\dc\asac\java-fundamentals\linter" />
-      <recent name="C:\Users\dc\asac\java-fundamentals\linter\app\src\main\resources" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Linter">
-    <configuration name="Linter" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="linter.App" />
-      <module name="linter.app.main" />
+  <component name="RunManager">
+    <configuration name="Library" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="linter.Library" />
+      <module name="linter.lib.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.appHasAGreeting" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;linter.AppTest.appHasAGreeting&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="AppTest.testNoErrorsFile" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;linter.AppTest.testNoErrorsFile&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Application.Linter" />
-      <item itemvalue="Gradle.AppTest.appHasAGreeting" />
-      <item itemvalue="Gradle.AppTest.testNoErrorsFile" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AppTest.appHasAGreeting" />
-        <item itemvalue="Gradle.AppTest.testNoErrorsFile" />
+        <item itemvalue="Application.Library" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9ee939a3-289a-447b-beaf-50d2777a5a83" name="Changes" comment="" />
-      <created>1632847565499</created>
+      <changelist id="569ad789-3bf9-42c6-b502-f7db1764efe4" name="Changes" comment="" />
+      <created>1633263396239</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1632847565499</updated>
+      <updated>1633263396239</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>

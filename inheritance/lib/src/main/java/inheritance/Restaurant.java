@@ -1,16 +1,15 @@
 package inheritance;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 
-public class Restaurant  extends Review{
+public class Restaurant implements AddReview {
    private String name;
    private double numOfStars;
    private String price;
-   private LinkedList<Review> reviews = new LinkedList<>();
+
+   private ArrayList<Review> resReviews = new ArrayList<>();
 
    public Restaurant (String name, double numOfStars, String price) {
-       super("","",0);
        this.name = name;
         if(numOfStars<0){
             this.numOfStars=0;
@@ -22,25 +21,28 @@ public class Restaurant  extends Review{
         this.price = price;
     }
 
-    public LinkedList<Review> getReviews() {
-        return reviews;
+    public ArrayList<Review> getReviews() {
+        return resReviews;
     }
 
+
+    @Override
     public void addReview(Review review) {
-        this.reviews.add(review);
-        updateNumOfStars();
-    }
+       this.numOfStars= ((this.numOfStars * resReviews.size()) + review.getNumOfStars()) / (resReviews.size()+1);
+        this.resReviews.add(review);
 
-    public void updateNumOfStars() {
-           double current = 0;
-           for (int i=0; i < getReviews().size(); i++) {
-               current += getReviews().get(i).getNumOfStars();
-           }
-           current = current/(getReviews().size());
-           current = Math.round(current);
-           this.numOfStars = current;
+   }
 
-       }
+//    public void updateNumOfStars() {
+//           double current = 0;
+//           for (int i=0; i < getReviews().size(); i++) {
+//               current += getReviews().get(i).getNumOfStars();
+//           }
+//           current = current/(getReviews().size());
+//           current = Math.round(current);
+//           this.numOfStars = current;
+//
+//       }
 
 
     public double getNumOfStars() {

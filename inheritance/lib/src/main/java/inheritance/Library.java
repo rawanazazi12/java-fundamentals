@@ -3,14 +3,16 @@
  */
 package inheritance;
 
+import java.util.ArrayList;
+
 public class Library {
     public static void main(String[] args) {
         System.out.println("hello rawan");
         // New Restaurant
         Restaurant fourGuys =new Restaurant("fourGuys",3.5,"$");
-        System.out.println(fourGuys);
+        System.out.println("4Guys Restaurant => "+fourGuys);
        // Add Reviews
-        Review rev1=new Review("best burger ever","Rawan Alazazi",5);
+        Review rev1=new Review("best burger ever","Rawan Alazazi",4);
         Review rev2=new Review("nice service and delicious food","Liam Hardy",10);
         Review rev3=new Review("I like this restaurant, but their prices are very high","Sara Tomas",3.5);
         Review rev4=new Review("well, it's not that bad","John Smith",2.5);
@@ -20,9 +22,47 @@ public class Library {
         fourGuys.addReview(rev2);
         fourGuys.addReview(rev3);
         fourGuys.addReview(rev4);
-        System.out.println(fourGuys.getReviews());
+        System.out.println("4Guys Restaurant Reviews => "+fourGuys.getReviews());
         // Restaurant star rating updated
-         System.out.println(fourGuys);
+         System.out.println(fourGuys +"\n");
+
+         // new Shop
+        Shop zara =new Shop("Zara", "Clothing shop", 3);
+        System.out.println(zara);
+
+        // add reviews for the shop
+
+        Review shopRev1=new Review("I like zara's outfits","Rawan Alazazi",4);
+        Review shopRev2 =new Review("I don't like this brand", "William James", 2);
+        zara.addReview(shopRev1);
+        zara.addReview(shopRev2);
+        System.out.println("Zara Shop Reviews => "+zara.getShopReviews()+"\n");
+
+        // new theater
+        ArrayList<String> moviesList=new ArrayList<>();
+
+        Theater theater= new Theater("amman theater",  moviesList );
+
+        // add movies
+        theater.addMovie("The invisible guest");
+        theater.addMovie("Don't breathe");
+        theater.addMovie("Hush");
+        theater.addMovie("Escape Room");
+        System.out.println(theater);
+        theater.removeMovie("Hush");
+        System.out.println(theater);
+
+        // add reviews for theater
+        Review theaterRev1=new Review("nice theater","Rawan Alazazi",5);
+        Review theaterRev2=new Review("I didn't like it ","Jason ",2);
+
+        theater.addReview(theaterRev1);
+        theater.addReview(theaterRev2);
+        System.out.println("Theater Reviews => "+theater.getReviews());
+        // add review for a movie
+        theater.addReview("The invisible guest","Amazing movie",5,"Rawan Alazazi");
+        System.out.println("Movie Review => "+ theater.getMovieReviews());
+
     }
 
 
