@@ -4,17 +4,26 @@ public class Review {
     String body;
     String author;
     double numOfStars;
+    String movieName;
 
     public Review(String body, String author, double numOfStars) {
         this.body = body;
         this.author = author;
-        if(numOfStars<0){
-            this.numOfStars=0;
-        }else if(numOfStars>5){
-            this.numOfStars=5;
-        }else {
+        if (numOfStars < 0) {
+            this.numOfStars = 0;
+        } else if (numOfStars > 5) {
+            this.numOfStars = 5;
+        } else {
             this.numOfStars = numOfStars;
         }
+    }
+
+    // new constructor to handle movie reviews
+    public Review(String body, String author, double numOfStars, String movieName) {
+        this.body = body;
+        this.author = author;
+        this.numOfStars = numOfStars;
+        this.movieName = movieName;
     }
 
     public String getBody() {
@@ -31,10 +40,18 @@ public class Review {
 
     @Override
     public String toString() {
-        return "Review{" +
+        if (this.movieName == null) {
+            return "Review{" +
+                    "body='" + body + '\'' +
+                    ", author='" + author + '\'' +
+                    ", numOfStars=" + numOfStars +
+                    '}';
+        } else{  return "Review{" +
                 "body='" + body + '\'' +
                 ", author='" + author + '\'' +
-                ", numOfStars=" + numOfStars +
+                ", numOfStars=" + numOfStars + ", movieName='" + movieName + '\''+
                 '}';
+
+        }
     }
 }
